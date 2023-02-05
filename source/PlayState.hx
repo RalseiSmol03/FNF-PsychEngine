@@ -1455,7 +1455,7 @@ class PlayState extends MusicBeatState
 				{
 					runtimeShaders.set(name, [frag, vert]);
 					//trace('Found shader $name!');
-					FlxG.log.warn('SHADER LOADED DIETZ NUTZ');
+					FlxG.log.warn('SHADER LOADED DIETZ NUTZ!');
 					return true;
 				}
 			}
