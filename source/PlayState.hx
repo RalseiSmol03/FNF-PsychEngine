@@ -1437,9 +1437,11 @@ class PlayState extends MusicBeatState
 				var frag:String = folder + name + '.frag';
 				var vert:String = folder + name + '.vert';
 				var found:Bool = false;
+				FlxG.log.warn('Exist');
 				if(FileSystem.exists(frag))
 				{
 					frag = File.getContent(frag);
+					FlxG.log.warn('Shader Exist!');
 					found = true;
 				}
 				else frag = null;
