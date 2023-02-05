@@ -1432,7 +1432,7 @@ class PlayState extends MusicBeatState
 		
 		for (folder in foldersToCheck)
 		{
-			if(FileSystem.exists(SUtil.getPath() + folder))
+			if(FileSystem.exists(folder))
 			{
 				var frag:String = folder + name + '.frag';
 				var vert:String = folder + name + '.vert';
@@ -1455,6 +1455,7 @@ class PlayState extends MusicBeatState
 				{
 					runtimeShaders.set(name, [frag, vert]);
 					//trace('Found shader $name!');
+					FlxG.log.warn('SHADER LOADED DIETZ NUTZ');
 					return true;
 				}
 			}
